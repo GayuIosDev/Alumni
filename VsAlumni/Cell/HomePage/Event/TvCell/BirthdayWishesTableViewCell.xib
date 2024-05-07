@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="105" id="KGk-i7-Jjw" customClass="BirthdayWishesTableViewCell" customModule="chalkpZ" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="433" height="105"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="433" height="105"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NPt-IX-0Vg">
+                        <rect key="frame" x="0.0" y="0.0" width="433" height="105"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L5T-ZD-agJ" customClass="UIViewX" customModule="chalkpZ" customModuleProvider="target">
+                                <rect key="frame" x="20" y="30" width="60" height="60"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatard" translatesAutoresizingMaskIntoConstraints="NO" id="T7H-qe-464">
+                                        <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="T7H-qe-464" secondAttribute="bottom" id="ACQ-In-SNJ"/>
+                                    <constraint firstItem="T7H-qe-464" firstAttribute="top" secondItem="L5T-ZD-agJ" secondAttribute="top" id="JKu-0P-xrb"/>
+                                    <constraint firstAttribute="width" constant="60" id="Oo7-yk-Qzq"/>
+                                    <constraint firstItem="T7H-qe-464" firstAttribute="leading" secondItem="L5T-ZD-agJ" secondAttribute="leading" id="cIk-Jk-nkb"/>
+                                    <constraint firstAttribute="height" constant="60" id="dEf-GL-11h"/>
+                                    <constraint firstAttribute="trailing" secondItem="T7H-qe-464" secondAttribute="trailing" id="hOQ-Lc-IM4"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Siddharth" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bPN-fH-DKY">
+                                <rect key="frame" x="100" y="30" width="313" height="24"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wish you many more Happy returns....." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="loW-ol-HJc">
+                                <rect key="frame" x="100" y="64" width="323" height="20.333333333333329"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                <color key="textColor" systemColor="opaqueSeparatorColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="bPN-fH-DKY" firstAttribute="top" secondItem="NPt-IX-0Vg" secondAttribute="top" constant="30" id="AnQ-Qi-otG"/>
+                            <constraint firstAttribute="trailing" secondItem="bPN-fH-DKY" secondAttribute="trailing" constant="20" id="GjY-1K-xKe"/>
+                            <constraint firstAttribute="trailing" secondItem="loW-ol-HJc" secondAttribute="trailing" constant="10" id="Itg-4y-D4e"/>
+                            <constraint firstItem="loW-ol-HJc" firstAttribute="leading" secondItem="L5T-ZD-agJ" secondAttribute="trailing" constant="20" id="QM9-Fl-Jf8"/>
+                            <constraint firstItem="L5T-ZD-agJ" firstAttribute="leading" secondItem="NPt-IX-0Vg" secondAttribute="leading" constant="20" id="QdN-eE-xDK"/>
+                            <constraint firstItem="loW-ol-HJc" firstAttribute="top" secondItem="bPN-fH-DKY" secondAttribute="bottom" constant="10" id="cSv-TO-P9s"/>
+                            <constraint firstItem="bPN-fH-DKY" firstAttribute="leading" secondItem="L5T-ZD-agJ" secondAttribute="trailing" constant="20" id="omS-TL-Vch"/>
+                            <constraint firstItem="L5T-ZD-agJ" firstAttribute="top" secondItem="NPt-IX-0Vg" secondAttribute="top" constant="30" id="v6o-fZ-d6e"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="NPt-IX-0Vg" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="2ic-bx-fjU"/>
+                    <constraint firstAttribute="bottom" secondItem="NPt-IX-0Vg" secondAttribute="bottom" id="T6W-P5-Ugd"/>
+                    <constraint firstItem="NPt-IX-0Vg" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="ejA-vg-feg"/>
+                    <constraint firstAttribute="trailing" secondItem="NPt-IX-0Vg" secondAttribute="trailing" id="mXH-5U-7S5"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="imgView" destination="T7H-qe-464" id="OL7-gK-MM6"/>
+                <outlet property="nameLbl" destination="bPN-fH-DKY" id="IFm-d9-Bkk"/>
+                <outlet property="wishesLbl" destination="loW-ol-HJc" id="XbW-nf-yVL"/>
+            </connections>
+            <point key="canvasLocation" x="-30" y="-96"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="avatard" width="60" height="60"/>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

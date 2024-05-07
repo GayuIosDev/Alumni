@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ImageChangeCollectionViewCell" customModule="chalkpZ" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="286" height="303"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="286" height="303"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FCp-zu-GPE">
+                        <rect key="frame" x="0.0" y="0.0" width="286" height="303"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ClD-Va-zDQ">
+                                <rect key="frame" x="20" y="5" width="246" height="293"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatard" translatesAutoresizingMaskIntoConstraints="NO" id="hJw-JW-RuY">
+                                        <rect key="frame" x="0.0" y="0.0" width="246" height="293"/>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="frt-MY-Pv7">
+                                        <rect key="frame" x="-10" y="-10" width="30" height="30"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cancel (2)" translatesAutoresizingMaskIntoConstraints="NO" id="R3A-lx-05j">
+                                                <rect key="frame" x="5" y="5" width="20" height="20"/>
+                                                <color key="tintColor" red="0.92268592120000004" green="0.30382448429999998" blue="0.23916825650000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="20" id="ehY-nD-OJ9"/>
+                                                    <constraint firstAttribute="height" constant="20" id="peV-yD-oXE"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="30" id="Z2N-04-gm0"/>
+                                            <constraint firstItem="R3A-lx-05j" firstAttribute="centerY" secondItem="frt-MY-Pv7" secondAttribute="centerY" id="ZaV-RQ-TS8"/>
+                                            <constraint firstItem="R3A-lx-05j" firstAttribute="centerX" secondItem="frt-MY-Pv7" secondAttribute="centerX" id="pAg-wi-lW0"/>
+                                            <constraint firstAttribute="height" constant="30" id="yyl-OB-dhC"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="hJw-JW-RuY" firstAttribute="top" secondItem="ClD-Va-zDQ" secondAttribute="top" id="FIk-Kb-4ff"/>
+                                    <constraint firstItem="hJw-JW-RuY" firstAttribute="leading" secondItem="ClD-Va-zDQ" secondAttribute="leading" id="FWf-Pc-krZ"/>
+                                    <constraint firstItem="frt-MY-Pv7" firstAttribute="top" secondItem="ClD-Va-zDQ" secondAttribute="top" constant="-10" id="Xlw-Ln-gwj"/>
+                                    <constraint firstAttribute="trailing" secondItem="hJw-JW-RuY" secondAttribute="trailing" id="YFj-Ky-N4L"/>
+                                    <constraint firstItem="frt-MY-Pv7" firstAttribute="leading" secondItem="ClD-Va-zDQ" secondAttribute="leading" constant="-10" id="b3S-Bt-HzL"/>
+                                    <constraint firstAttribute="bottom" secondItem="hJw-JW-RuY" secondAttribute="bottom" id="fso-eT-OHm"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ClD-Va-zDQ" firstAttribute="top" secondItem="FCp-zu-GPE" secondAttribute="top" constant="5" id="C1n-vM-ZSz"/>
+                            <constraint firstAttribute="bottom" secondItem="ClD-Va-zDQ" secondAttribute="bottom" constant="5" id="Fo5-eW-igq"/>
+                            <constraint firstItem="ClD-Va-zDQ" firstAttribute="leading" secondItem="FCp-zu-GPE" secondAttribute="leading" constant="20" id="Gdy-9t-5Go"/>
+                            <constraint firstAttribute="trailing" secondItem="ClD-Va-zDQ" secondAttribute="trailing" constant="20" id="b1t-W0-aKc"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="FCp-zu-GPE" secondAttribute="bottom" id="8Z5-T2-fLd"/>
+                <constraint firstItem="FCp-zu-GPE" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="KfU-ez-4ZS"/>
+                <constraint firstItem="FCp-zu-GPE" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Pgy-As-RTQ"/>
+                <constraint firstAttribute="trailing" secondItem="FCp-zu-GPE" secondAttribute="trailing" id="br5-8r-MSX"/>
+            </constraints>
+            <size key="customSize" width="286" height="303"/>
+            <connections>
+                <outlet property="deleteView" destination="frt-MY-Pv7" id="myz-VH-Eh1"/>
+                <outlet property="img" destination="hJw-JW-RuY" id="B9q-Md-3iF"/>
+            </connections>
+            <point key="canvasLocation" x="268.70229007633588" y="-69.366197183098592"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="avatard" width="60" height="60"/>
+        <image name="cancel (2)" width="512" height="512"/>
+    </resources>
+</document>

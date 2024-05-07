@@ -1,0 +1,6 @@
+framework module Pods_VsAlumni {
+  umbrella header "Pods-VsAlumni-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>131128429802-ijkal20okj61ct586ofajcgjmflt0o71.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.131128429802-ijkal20okj61ct586ofajcgjmflt0o71</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDS6YYul-CiV0wobE9IKl1rqVyJYp7ql-U</string>
+	<key>GCM_SENDER_ID</key>
+	<string>131128429802</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.Vs-Alumni.VsAlumni</string>
+	<key>PROJECT_ID</key>
+	<string>alumnite-chalkpz-5d1ff</string>
+	<key>STORAGE_BUCKET</key>
+	<string>alumnite-chalkpz-5d1ff.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:131128429802:ios:530da46118ec8d56f85b93</string>
+	<key>DATABASE_URL</key>
+	<string>https://alumnite-chalkpz-5d1ff-default-rtdb.firebaseio.com</string>
+</dict>
+</plist>

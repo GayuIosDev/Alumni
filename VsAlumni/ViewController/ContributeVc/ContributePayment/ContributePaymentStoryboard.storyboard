@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Contribute Payment View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="Y6W-OH-hqX" customClass="ContributePaymentViewController" customModule="chalkpZ" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P2F-Tq-wOy">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="35E-pe-oDe">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="40"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vvs-Xc-lgr">
+                                                <rect key="frame" x="0.0" y="0.0" width="50" height="40"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="back" translatesAutoresizingMaskIntoConstraints="NO" id="aue-41-9LW">
+                                                        <rect key="frame" x="15" y="10" width="20" height="20"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="20" id="X8S-hi-gFS"/>
+                                                            <constraint firstAttribute="width" constant="20" id="qFM-cC-3We"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" name="RegisterColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="aue-41-9LW" firstAttribute="centerX" secondItem="Vvs-Xc-lgr" secondAttribute="centerX" id="S9x-nB-iwe"/>
+                                                    <constraint firstAttribute="width" constant="50" id="fIL-Y5-tMi"/>
+                                                    <constraint firstItem="aue-41-9LW" firstAttribute="centerY" secondItem="Vvs-Xc-lgr" secondAttribute="centerY" id="gHX-kO-Lr0"/>
+                                                </constraints>
+                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contribute" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3fb-pQ-Wdg">
+                                                <rect key="frame" x="70" y="10" width="303" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" name="RegisterColor"/>
+                                        <constraints>
+                                            <constraint firstItem="3fb-pQ-Wdg" firstAttribute="leading" secondItem="Vvs-Xc-lgr" secondAttribute="trailing" constant="20" id="553-sG-S3C"/>
+                                            <constraint firstItem="Vvs-Xc-lgr" firstAttribute="leading" secondItem="35E-pe-oDe" secondAttribute="leading" id="F6k-mk-99h"/>
+                                            <constraint firstAttribute="trailing" secondItem="3fb-pQ-Wdg" secondAttribute="trailing" constant="20" id="Hse-Ka-oVp"/>
+                                            <constraint firstItem="Vvs-Xc-lgr" firstAttribute="top" secondItem="35E-pe-oDe" secondAttribute="top" id="JZn-lS-2cN"/>
+                                            <constraint firstAttribute="bottom" secondItem="Vvs-Xc-lgr" secondAttribute="bottom" id="Nr4-I2-wFs"/>
+                                            <constraint firstItem="3fb-pQ-Wdg" firstAttribute="top" secondItem="35E-pe-oDe" secondAttribute="top" constant="10" id="h3c-9Z-fkY"/>
+                                            <constraint firstAttribute="height" constant="40" id="xQx-xd-LUD"/>
+                                        </constraints>
+                                    </view>
+                                    <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R9y-li-Bfo">
+                                        <rect key="frame" x="0.0" y="40" width="393" height="719"/>
+                                        <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <wkWebViewConfiguration key="configuration">
+                                            <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                            <wkPreferences key="preferences"/>
+                                        </wkWebViewConfiguration>
+                                    </wkWebView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="35E-pe-oDe" firstAttribute="top" secondItem="P2F-Tq-wOy" secondAttribute="top" id="09H-sl-mv5"/>
+                                    <constraint firstAttribute="trailing" secondItem="R9y-li-Bfo" secondAttribute="trailing" id="0h9-eg-SIT"/>
+                                    <constraint firstItem="R9y-li-Bfo" firstAttribute="leading" secondItem="P2F-Tq-wOy" secondAttribute="leading" id="4h8-Vq-6jX"/>
+                                    <constraint firstAttribute="trailing" secondItem="35E-pe-oDe" secondAttribute="trailing" id="DR8-yb-nSA"/>
+                                    <constraint firstAttribute="bottom" secondItem="R9y-li-Bfo" secondAttribute="bottom" id="XIo-Sl-6Xb"/>
+                                    <constraint firstItem="35E-pe-oDe" firstAttribute="leading" secondItem="P2F-Tq-wOy" secondAttribute="leading" id="aIB-W8-qRh"/>
+                                    <constraint firstItem="R9y-li-Bfo" firstAttribute="top" secondItem="35E-pe-oDe" secondAttribute="bottom" id="n79-ip-E5L"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" name="RegisterColor"/>
+                        <constraints>
+                            <constraint firstItem="P2F-Tq-wOy" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="8hN-hX-6pc"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="P2F-Tq-wOy" secondAttribute="bottom" id="MDf-sR-UVb"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="P2F-Tq-wOy" secondAttribute="trailing" id="ZQn-1N-tXz"/>
+                            <constraint firstItem="P2F-Tq-wOy" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="zH5-tr-I36"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backView" destination="Vvs-Xc-lgr" id="LuP-tO-aj3"/>
+                        <outlet property="webView" destination="R9y-li-Bfo" id="B9D-yY-cka"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="88" y="4"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="back" width="26" height="25"/>
+        <namedColor name="RegisterColor">
+            <color red="0.31400001049041748" green="0.76099997758865356" blue="0.78799998760223389" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

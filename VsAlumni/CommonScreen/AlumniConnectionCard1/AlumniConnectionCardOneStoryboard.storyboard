@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Alumni Connection Card One View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="AlumniConnectionCardOneViewController" customModule="Vs_Alumni" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eXo-Ho-e6i">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="card1" translatesAutoresizingMaskIntoConstraints="NO" id="m2w-Ym-kW6">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="759"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&quot;Expand your network through alumni connections.&quot;" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="crA-Yg-ToV">
+                                        <rect key="frame" x="30" y="603.33333333333337" width="333" height="40.666666666666629"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aVO-C9-7Zt">
+                                        <rect key="frame" x="288" y="674" width="75" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="75" id="r4H-4x-2pc"/>
+                                            <constraint firstAttribute="height" constant="35" id="yzE-tb-K2D"/>
+                                        </constraints>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="NEXT">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="aVO-C9-7Zt" firstAttribute="top" secondItem="crA-Yg-ToV" secondAttribute="bottom" constant="30" id="RWu-7R-f12"/>
+                                    <constraint firstItem="m2w-Ym-kW6" firstAttribute="top" secondItem="eXo-Ho-e6i" secondAttribute="top" id="Vf0-MH-2Vh"/>
+                                    <constraint firstAttribute="trailing" secondItem="crA-Yg-ToV" secondAttribute="trailing" constant="30" id="bWA-E6-pgr"/>
+                                    <constraint firstItem="crA-Yg-ToV" firstAttribute="leading" secondItem="eXo-Ho-e6i" secondAttribute="leading" constant="30" id="eyM-kH-lgi"/>
+                                    <constraint firstAttribute="trailing" secondItem="aVO-C9-7Zt" secondAttribute="trailing" constant="30" id="iYW-bb-gKA"/>
+                                    <constraint firstAttribute="trailing" secondItem="m2w-Ym-kW6" secondAttribute="trailing" id="jeB-6f-VJN"/>
+                                    <constraint firstAttribute="bottom" secondItem="aVO-C9-7Zt" secondAttribute="bottom" constant="50" id="oBf-oD-GrI"/>
+                                    <constraint firstAttribute="bottom" secondItem="m2w-Ym-kW6" secondAttribute="bottom" id="tmB-Ow-GsU"/>
+                                    <constraint firstItem="m2w-Ym-kW6" firstAttribute="leading" secondItem="eXo-Ho-e6i" secondAttribute="leading" id="uVt-b8-zft"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="eXo-Ho-e6i" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="1Ht-4N-F3e"/>
+                            <constraint firstItem="eXo-Ho-e6i" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="7o2-o1-hry"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="eXo-Ho-e6i" secondAttribute="bottom" id="Zdq-4U-ZXe"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="eXo-Ho-e6i" secondAttribute="trailing" id="agJ-gx-oqb"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138" y="4"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="card1" width="360" height="583"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
